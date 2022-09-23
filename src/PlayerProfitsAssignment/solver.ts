@@ -166,8 +166,8 @@ function buildVariableKey(posName: string, negName: string) {
 export function parseVariableKey(key: string) {
     const [posP, negP] = key.split("<--");
     return {
-        ower: negP,
-        owee: posP,
+        toPay: negP,
+        recipient: posP,
     }
 }
 
