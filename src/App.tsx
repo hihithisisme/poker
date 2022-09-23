@@ -1,7 +1,7 @@
 import { ChakraProvider } from '@chakra-ui/react';
 import * as React from 'react';
 import { hot } from "react-hot-loader/root";
-import Calculator from './pages/Calculator';
+import PlayerProfitsAssignment from './PlayerProfitsAssignment/PlayerProfitsAssignment';
 
 interface Props {
     name: string
@@ -10,7 +10,7 @@ interface Props {
 function App(props: Props) {
     return (
         <ChakraProvider>
-            <Calculator {...props} />
+            <PlayerProfitsAssignment {...props} />
         </ChakraProvider>
     );
 }

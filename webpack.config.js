@@ -37,6 +37,10 @@ const config = {
     ],
     alias: {
       'react-dom': '@hot-loader/react-dom'
+    },
+    fallback: {
+      "child_process": false,
+      "fs": false
     }
   }
 };
