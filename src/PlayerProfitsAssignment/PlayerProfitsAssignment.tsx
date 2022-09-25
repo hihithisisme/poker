@@ -226,8 +226,13 @@ function displayMoney(val: number): string {
 }
 
 function getTotalBalance(players: Player[]) {
-    return players
+    const total = players
         .map((player) => player.profit)
         .reduce((prev, curr) => prev + curr);
+    return roundMoney(total);
+}
+
+function roundMoney(amount: number): number {
+    return Math.round(amount * 100) / 100;
 }
 
